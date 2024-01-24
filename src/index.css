@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.mainblock{
+    width: 46rem;
+}
+
+dialog::backdrop{
+    background:rgb(168, 180, 185);
+    opacity: .7;
+}
+
+
+.crossbutton{
+  transition: 0.3s;
+   animation-duration: .2s;
+  animation-name: slidein;
+}
+
+.crossbutton:hover{
+  transform: scale(1.1);
+  background-color: red;
+}
+
+.button{
+  transition: 0.3s;
+}
+.button:hover{
+  transform: scale(1.1);
+ 
+}
+
+
+  
+  @keyframes slidein {
+    from {
+      opacity: 0;
+      position: relative;
+      top: 18px;
+    }
+  
+    
+    25% {
+      opacity: .25;
+      position: relative;
+      top: 8px;
+    }
+    50% {
+      opacity: .5;
+      position: relative;
+      top: 5px;
+    }
+    75%{
+      opacity: .75;
+      position: relative;
+      top: 2.5px;
+    }
+
+    
+
+  
+    to {
+      opacity: 1;
+      position: relative;
+        top: 0px;
+      }
+  }
