@@ -7,8 +7,6 @@ import index from '../assets/index'
 
 function Addtask() {
 
-
-
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSecondModalOpen, setIsSecondModalOpen] = useState(false);
 
